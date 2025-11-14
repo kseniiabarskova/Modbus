@@ -1,0 +1,5 @@
+*.idea/*
+env.cmake
+*.zip
+
+cmake-build-*/
