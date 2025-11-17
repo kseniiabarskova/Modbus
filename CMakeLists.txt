@@ -34,7 +34,9 @@ file(GLOB_RECURSE SRC
         src/libs/libmodbus/*.c
 )
 
-add_executable(${PROJECT_NAME} ${SRC} main.cpp)
+add_executable(${PROJECT_NAME} ${SRC} main.cpp
+        src/wrappers/modbus_wrapper.h
+)
 
 target_include_directories(${PROJECT_NAME} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 target_link_libraries(modbus_lesson ws2_32)
